@@ -37,7 +37,7 @@ function draw_cm(mat,tick,num_class)
 %           Email: peegeelee@gmail.com
 %%
 imagesc(1:num_class,1:num_class,mat);            %# in color
-%colormap(flipud(gray));  %# for gray; black for large value.
+colormap(flipud(gray));  %# for gray; black for large value.
 
 textStrings = num2str(mat(:),'%0.2f');
 textStrings = strtrim(cellstr(textStrings)); 
